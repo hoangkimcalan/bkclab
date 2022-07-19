@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-theme{
+  background-color: #fff;
+  border-radius: 12px;
+  width: 42px;
+}
+
+.hoverTraslate:hover{
+  transform: translateY(-12px);
+}
+
+.drop-shadowIn4{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.active{
+  color: #3b82f6;
+  position: relative;
+}
+
+.active:after{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 50px;
+  bottom: -.3rem;
+  height: 2px;
+  background-color: #3b82f6;
+}
+
+.active-prj{
+  color: #3b82f6;
+  position: relative;
+}
+
+.active-prj:after{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 40%;
+  bottom: 10px;
+  left: 18px;
+  height: 1px;
+  background-color: #3b82f6;
+}
+
+.active-filter{
+  align-items: center;
+  justify-content: between;
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  height: 46px;
+  padding-left: 26px;
+  padding-right: 26px;
+  border-radius: 6px;
+
+}
